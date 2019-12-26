@@ -1,0 +1,55 @@
+{
+  "name": "eduardo-cv-frontend-web-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "start": "webpack-dev-server --mode development --open --hot --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoAC/eduardo-cv-frontend-web-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/EduardoAC/eduardo-cv-frontend-web-v2/issues"
+  },
+  "homepage": "https://github.com/EduardoAC/eduardo-cv-frontend-web-v2#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.7",
+    "@types/react": "16.9.17",
+    "@types/react-dom": "16.9.4",
+    "@typescript-eslint/eslint-plugin": "2.13.0",
+    "@typescript-eslint/parser": "2.13.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "3.4.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-typescript": "6.3.1",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-jest": "23.1.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.17.0",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "1.1.2",
+    "typescript": "3.7.4",
+    "webpack": "4.41.4",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  }
+}
