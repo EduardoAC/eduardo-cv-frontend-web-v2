@@ -18,21 +18,34 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       flexGrow: 1,
     },
+    toolBar: {
+      [theme.breakpoints.up('lg')]: {
+        width: '100%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        maxWidth: theme.breakpoints.width('lg'),
+      },
+    },
   }),
 );
 
-export const Header = (): React.ReactElement => {
+interface HeaderProps {
+  toggleDrawer: Function;
+}
+export const Header: React.SFC<HeaderProps> = ({
+  toggleDrawer,
+}): React.ReactElement => {
   const classes = useStyles();
   return (
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="fixed" color="default">
+      <Toolbar variant="regular" className={classes.toolBar}>
         <Typography variant="h6" className={classes.title}>
-          News
+          My Interactive CV
         </Typography>
-        <Button color="inherit">Login</Button>
         <IconButton
           edge="start"
           className={classes.menuButton}
+          onClick={toggleDrawer(true)}
           color="inherit"
           aria-label="menu"
         >
