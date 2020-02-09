@@ -29,6 +29,7 @@ const useStyles = makeStyles(() =>
     },
     paragraph: {
       marginBottom: '24px',
+      textAlign: 'left',
     },
   }),
 );

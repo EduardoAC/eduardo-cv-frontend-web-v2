@@ -9,15 +9,15 @@ import { Homepage } from './page/Homepage';
 export const App = (): React.ReactElement => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    <Layout>
-      <Router>
+    <Router>
+      <Layout>
         <Switch>
           <Route path="/about">
             <h1>about</h1>
           </Route>
           <Route path="/" component={Homepage} />
         </Switch>
-      </Router>
-    </Layout>
+      </Layout>
+    </Router>
   </ThemeProvider>
 );

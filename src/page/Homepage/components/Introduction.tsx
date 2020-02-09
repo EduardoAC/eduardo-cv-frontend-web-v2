@@ -9,7 +9,7 @@ import {
   Typography,
   Container,
 } from '@material-ui/core';
-import Image from '../../../../public/assets/images/introduction-image-1280.jpg';
+import IntroductionImg from '../../../../public/assets/images/introduction-image-1280.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -32,24 +32,46 @@ const useStyles = makeStyles((theme: Theme) =>
     titleContent: {
       padding: 0,
       margin: 0,
-      marginBottom: theme.spacing(1),
+      marginBottom: theme.spacing(2),
+      fontSize: '32px',
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '48px',
+      },
     },
     content: {
       background: 'rgba(0, 0, 0, 0.2)',
       position: 'absolute',
       overflow: 'hidden',
-      display: 'block',
+      display: 'flex',
+      flexDirection: 'column',
       top: '0',
       left: '0',
       right: '0',
       bottom: '0',
       width: '95%',
-      height: '80%',
+      height: '85%',
       margin: 'auto',
+      [theme.breakpoints.up('sm')]: {
+        padding: '30px 0',
+        width: '90%',
+        height: '65%',
+      },
       [theme.breakpoints.up('md')]: {
         padding: '30px 0',
         width: '950px',
         height: '315px',
+      },
+    },
+    title: {
+      justifyContent: 'center',
+      [theme.breakpoints.up('sm')]: {
+        justifyContent: 'start',
+      },
+    },
+    hiddenXS: {
+      display: 'none',
+      [theme.breakpoints.up('sm')]: {
+        display: 'block',
       },
     },
   }),
@@ -62,13 +84,13 @@ export const Introduction = (): React.ReactElement => {
       <Container disableGutters>
         <Card className={classes.card}>
           <CardMedia
-            image={Image}
+            image={IntroductionImg}
             title="Introduction developer"
             className={classes.media}
             component="img"
           />
           <CardContent className={classes.content}>
-            <Typography variant="h3" component="h1">
+            <Typography variant="h3" component="h1" className={classes.title}>
               <p className={classes.titleContent}>
                 Welcome to my interactive curriculum
               </p>
@@ -76,7 +98,7 @@ export const Introduction = (): React.ReactElement => {
                 My name is Eduardo Aparicio Cardenes
               </p>
             </Typography>
-            <Typography variant="h4" component="p">
+            <Typography variant="h4" component="p" className={classes.hiddenXS}>
               One place that define my worker soul and share with you
             </Typography>
           </CardContent>
