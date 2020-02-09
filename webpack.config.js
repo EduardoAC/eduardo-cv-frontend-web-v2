@@ -40,12 +40,14 @@ module.exports = {
     ],
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: [__dirname + '/public', __dirname + '/public/assets/images'],
     ...webpack.devServer,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.template.html',
+      favicon: './public/favicon.ico',
     }),
   ],
 };

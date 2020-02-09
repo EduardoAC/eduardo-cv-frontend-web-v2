@@ -4,6 +4,7 @@ import { ThemeProvider } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { theme } from './theme/default';
+import { About } from './page/About';
 import { Homepage } from './page/Homepage';
 
 export const App = (): React.ReactElement => (
@@ -12,10 +13,8 @@ export const App = (): React.ReactElement => (
     <Router>
       <Layout>
         <Switch>
-          <Route path="/about">
-            <h1>about</h1>
-          </Route>
-          <Route path="/" component={Homepage} />
+          <Route path="/about" component={About} exact />
+          <Route path="/" component={Homepage} exact />
         </Switch>
       </Layout>
     </Router>
