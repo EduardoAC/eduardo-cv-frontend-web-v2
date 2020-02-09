@@ -12,15 +12,15 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: 'column',
       alignItems: 'center',
       textAlign: 'center',
-      paddingTop: theme.spacing(4),
-      paddingBottom: theme.spacing(8),
-      [theme.breakpoints.up('md')]: {
-        paddingTop: theme.spacing(16),
-        paddingBottom: theme.spacing(16),
-        flexDirection: 'row',
-        alignItems: 'flex-start',
-        textAlign: 'left',
-      },
+      // paddingTop: theme.spacing(4),
+      // paddingBottom: theme.spacing(8),
+      // [theme.breakpoints.up('md')]: {
+      //   paddingTop: theme.spacing(16),
+      //   paddingBottom: theme.spacing(16),
+      //   flexDirection: 'row',
+      //   alignItems: 'flex-start',
+      //   textAlign: 'left',
+      // },
     },
   }),
 );
@@ -30,7 +30,12 @@ export const Content: React.SFC<ContentProps> = ({
 }: ContentProps): React.ReactElement => {
   const classes = useStyles();
   return (
-    <Container maxWidth="lg" component="main" className={classes.content}>
+    <Container
+      maxWidth={false}
+      component="main"
+      disableGutters
+      className={classes.content}
+    >
       {children}
     </Container>
   );

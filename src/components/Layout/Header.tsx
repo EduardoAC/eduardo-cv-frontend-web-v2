@@ -33,11 +33,12 @@ interface HeaderProps {
   toggleDrawer: Function;
 }
 export const Header: React.SFC<HeaderProps> = ({
+  // eslint-disable-next-line react/prop-types
   toggleDrawer,
 }): React.ReactElement => {
   const classes = useStyles();
   return (
-    <AppBar position="fixed" color="default">
+    <AppBar position="sticky" color="default">
       <Toolbar variant="regular" className={classes.toolBar}>
         <Typography variant="h6" className={classes.title}>
           My Interactive CV
