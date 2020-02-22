@@ -1,7 +1,8 @@
 import React from 'react';
-import { Homepage } from '../page/Homepage';
-import { MyProjects } from '../page/MyProjects/MyProjects';
-import { About } from '../page/About';
+import { MyWorkTimeline } from '@pages/MyWorkTimeline';
+import { Homepage } from '@pages/Homepage';
+import { MyProjects } from '@pages/MyProjects/MyProjects';
+import { About } from '@pages/About';
 
 export interface NavigationLink {
   title: string;
@@ -27,7 +28,8 @@ export const NavigationLinks: NavigationLink[] = [
   },
   {
     title: 'My Experience',
-    to: '',
+    to: '/my-work-timeline',
+    component: MyWorkTimeline,
   },
   {
     title: 'Contact',
