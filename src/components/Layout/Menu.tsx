@@ -1,15 +1,13 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import {
-  makeStyles,
   createStyles,
   List,
+  Link,
   ListItem,
-  ListItemIcon,
   ListItemText,
-  Divider,
+  makeStyles,
 } from '@material-ui/core';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -21,6 +19,29 @@ const useStyles = makeStyles(() =>
     },
   }),
 );
+
+const NavigationLinks = [
+  {
+    title: 'Home',
+    to: '',
+  },
+  {
+    title: 'About',
+    to: '/about',
+  },
+  {
+    title: 'My Projects',
+    to: '',
+  },
+  {
+    title: 'My Experience',
+    to: '',
+  },
+  {
+    title: 'Contact',
+    to: '',
+  },
+];
 export const menu = (toggleDrawer: Function): React.ReactElement => {
   const classes = useStyles();
   return (
@@ -31,13 +52,13 @@ export const menu = (toggleDrawer: Function): React.ReactElement => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {['Home', 'About', 'My Projects', 'My Experience', 'Contact'].map(
-          text => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
+        {NavigationLinks.map(({ title, to }) => (
+          <Link component={RouterLink} to={to} color="inherit" underline="none">
+            <ListItem button key={title}>
+              <ListItemText primary={title} />
             </ListItem>
-          ),
-        )}
+          </Link>
+        ))}
       </List>
     </div>
   );

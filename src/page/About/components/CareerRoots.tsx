@@ -6,7 +6,6 @@ import {
   Theme,
   Typography,
 } from '@material-ui/core';
-import Image from 'material-ui-image';
 import React from 'react';
 import EduardoCertification1Img from '../../../../public/assets/images/certificacion-academica-eduardo-aparicio-cardenes-pag_1.jpg';
 import EduardoCertification2Img from '../../../../public/assets/images/certificacion-academica-eduardo-aparicio-cardenes-pag_2.jpg';
@@ -52,7 +51,7 @@ export const CareerRoots = (): React.ReactElement => {
       <img
         src={LifeTimelineImg}
         alt="life timeline"
-        style={{ backgroundColor: 'white' }}
+        style={{ backgroundColor: 'white', marginBottom: '24px' }}
       />
       <Typography variant="h5" component="p" className={classes.paragraph}>
         Since then, I was the first of my school colleges to have the latest
