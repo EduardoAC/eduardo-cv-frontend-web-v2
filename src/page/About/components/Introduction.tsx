@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundSize: '20px 20px',
     },
     section: {
-      padding: '50px 0',
+      paddingTop: '50px',
+      paddingBottom: '50px',
     },
   }),
 );
