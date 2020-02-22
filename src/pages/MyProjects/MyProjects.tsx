@@ -5,10 +5,9 @@ import {
   makeStyles,
   Theme,
   createStyles,
-  Link,
   Button,
 } from '@material-ui/core';
-import { MyProjectsIntroduction } from './components/introduction';
+import { MyProjectsIntroduction } from './components/Introduction';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

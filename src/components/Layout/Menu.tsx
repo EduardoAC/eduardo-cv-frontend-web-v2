@@ -8,7 +8,7 @@ import {
   ListItemText,
   makeStyles,
 } from '@material-ui/core';
-import { NavigationLinks } from '../../constants/Navigation';
+import { NavigationLinks } from '@constants/Navigation';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -33,7 +33,9 @@ export const menu = (toggleDrawer: Function): React.ReactElement => {
       <List>
         {NavigationLinks.map(({ title, to }) => (
           <Link
-            key={`router-path-${title.toLocaleLowerCase().replace(' ', '-')}`}
+            key={`navigation-link-${title
+              .toLocaleLowerCase()
+              .replace(' ', '-')}`}
             component={RouterLink}
             to={to}
             color="inherit"
