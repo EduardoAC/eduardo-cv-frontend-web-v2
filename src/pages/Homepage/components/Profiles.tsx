@@ -59,7 +59,11 @@ export const Profiles = (): React.ReactElement => {
         <Grid container spacing={3} className={classes.profiles}>
           <Grid item xs={12} sm={4}>
             <div className={classes.software_architect}>
-              <Link component={LinkReactRouter} color="inherit" to="/homepage">
+              <Link
+                component={LinkReactRouter}
+                color="inherit"
+                to="/frontend-background"
+              >
                 <Image src={FrontendDeveloperImg} />
                 <Typography variant="h5" component="span">
                   Frontend Developer

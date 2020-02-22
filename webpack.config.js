@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   // webpack will take the files from ./src/index
@@ -53,5 +54,6 @@ module.exports = {
       template: './public/index.template.html',
       favicon: './public/favicon.ico',
     }),
+    new CopyWebpackPlugin([{ from: 'public/assets/images', to: 'images' }]),
   ],
 };

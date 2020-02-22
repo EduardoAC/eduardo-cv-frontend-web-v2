@@ -57,7 +57,7 @@ export const JobsTimeline = (): React.ReactElement => {
                 <Link
                   component={LinkReactRouter}
                   color="inherit"
-                  to="/homepage"
+                  to="/my-work-timeline"
                 >
                   my work expirence
                 </Link>
