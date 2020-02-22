@@ -2,10 +2,9 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { NavigationLinks } from './constants/Navigation';
 import { Layout } from './components/Layout';
 import { theme } from './theme/default';
-import { About } from './page/About';
-import { Homepage } from './page/Homepage';
 
 export const App = (): React.ReactElement => (
   <ThemeProvider theme={theme}>
@@ -13,8 +12,17 @@ export const App = (): React.ReactElement => (
     <Router>
       <Layout>
         <Switch>
-          <Route path="/about" component={About} exact />
-          <Route path="/" component={Homepage} exact />
+          {NavigationLinks.map(
+            ({ to, title, component }) =>
+              component && (
+                <Route
+                  key={`route-${title.toLocaleLowerCase().replace(' ', '-')}`}
+                  path={to}
+                  component={component}
+                  exact
+                />
+              ),
+          )}
         </Switch>
       </Layout>
     </Router>
