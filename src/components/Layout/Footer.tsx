@@ -52,7 +52,7 @@ export const Footer: React.SFC<{}> = () => {
                 <Link
                   component={LinkReactRouter}
                   color="inherit"
-                  to="/homepage"
+                  to="/about-me"
                 >
                   About me
                 </Link>
@@ -95,7 +95,7 @@ export const Footer: React.SFC<{}> = () => {
                 <Link
                   component={LinkReactRouter}
                   color="inherit"
-                  to="/homepage"
+                  to="/backend-background"
                 >
                   As backend developer
                 </Link>

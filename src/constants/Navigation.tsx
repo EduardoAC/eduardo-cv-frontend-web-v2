@@ -5,6 +5,7 @@ import { MyProjects } from '@pages/MyProjects/MyProjects';
 import { Frontend } from '@pages/Frontend';
 import { SoftwareArchitect } from '@pages/SoftwareArchitect';
 import { About } from '@pages/About';
+import { BackendBackground } from '@pages/BackendBackground';
 
 export interface NavigationLink {
   id: string;
@@ -23,7 +24,7 @@ export const NavigationRoutes: NavigationLink[] = [
   {
     id: 'about',
     title: 'About',
-    to: '/about',
+    to: '/about-me',
     component: About,
   },
   {
@@ -54,6 +55,12 @@ export const NavigationRoutes: NavigationLink[] = [
     title: 'SoftwareArchitect',
     to: '/software-architect-background',
     component: SoftwareArchitect,
+  },
+  {
+    id: 'backend-background',
+    title: 'BackendBackground',
+    to: '/backend-background',
+    component: BackendBackground,
   },
 ];
 
