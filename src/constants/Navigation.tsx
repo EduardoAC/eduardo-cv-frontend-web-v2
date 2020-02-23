@@ -6,6 +6,7 @@ import { Frontend } from '@pages/Frontend';
 import { SoftwareArchitect } from '@pages/SoftwareArchitect';
 import { About } from '@pages/About';
 import { BackendBackground } from '@pages/BackendBackground';
+import { Contact } from '@pages/Contact';
 
 export interface NavigationLink {
   id: string;
@@ -40,9 +41,10 @@ export const NavigationRoutes: NavigationLink[] = [
     component: MyWorkTimeline,
   },
   {
-    id: 'contact',
+    id: 'contact-or-hire-me',
     title: 'Contact',
-    to: '',
+    to: '/contact-or-hire-me',
+    component: Contact,
   },
   {
     id: 'frontend',
@@ -69,7 +71,7 @@ const navigationMenuLinks = [
   'about',
   'my-projects',
   'my-experience',
-  'contact',
+  'contact-or-hire-me',
 ];
 export const NavigationLinks: NavigationLink[] = NavigationRoutes.filter(
   ({ id }) => navigationMenuLinks.includes(id),

@@ -66,9 +66,9 @@ export const ContentBlogs = (): React.ReactElement => {
               >
                 These are{' '}
                 <Link
-                  component={LinkReactRouter}
                   color="inherit"
-                  to="/homepage"
+                  href="https://medium.com/@byeduardoac"
+                  target="_blank"
                 >
                   business and technology blog
                 </Link>{' '}
