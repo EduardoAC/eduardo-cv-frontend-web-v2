@@ -66,11 +66,7 @@ export const Greetings = (): React.ReactElement => {
                 className={classes.paragraph}
               >
                 Are you ready to discover all of them? Then go to{' '}
-                <Link
-                  component={LinkReactRouter}
-                  color="inherit"
-                  to="/homepage"
-                >
+                <Link component={LinkReactRouter} color="inherit" to="/">
                   how did i build my intereactive CV
                 </Link>
               </Typography>
