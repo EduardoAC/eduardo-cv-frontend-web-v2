@@ -32,9 +32,9 @@ export const Footer: React.SFC<{}> = () => {
             <List>
               <ListItem disableGutters>
                 <Link
-                  component={LinkReactRouter}
                   color="inherit"
-                  to="/homepage"
+                  href="https://medium.com/@byeduardoac"
+                  target="_blank"
                 >
                   Business And Technology blog
                 </Link>
