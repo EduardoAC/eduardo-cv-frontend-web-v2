@@ -3,6 +3,7 @@ import { MyWorkTimeline } from '@pages/MyWorkTimeline';
 import { Homepage } from '@pages/Homepage';
 import { MyProjects } from '@pages/MyProjects/MyProjects';
 import { Frontend } from '@pages/Frontend';
+import { SoftwareArchitect } from '@pages/SoftwareArchitect';
 import { About } from '@pages/About';
 
 export interface NavigationLink {
@@ -47,6 +48,12 @@ export const NavigationRoutes: NavigationLink[] = [
     title: 'Frontend',
     to: '/frontend-background',
     component: Frontend,
+  },
+  {
+    id: 'software-architect',
+    title: 'SoftwareArchitect',
+    to: '/software-architect-background',
+    component: SoftwareArchitect,
   },
 ];
 

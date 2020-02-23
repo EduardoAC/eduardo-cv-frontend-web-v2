@@ -73,7 +73,11 @@ export const Profiles = (): React.ReactElement => {
           </Grid>
           <Grid item xs={12} sm={4}>
             <div>
-              <Link component={LinkReactRouter} color="inherit" to="/homepage">
+              <Link
+                component={LinkReactRouter}
+                color="inherit"
+                to="/software-architect-background"
+              >
                 <Image src={SoftwareArchitectImg} />
                 <Typography variant="h5" component="span">
                   Software Architect

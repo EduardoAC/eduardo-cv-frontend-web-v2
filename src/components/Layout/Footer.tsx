@@ -77,7 +77,7 @@ export const Footer: React.SFC<{}> = () => {
                 <Link
                   component={LinkReactRouter}
                   color="inherit"
-                  to="/homepage"
+                  to="/frontend-background"
                 >
                   As frontend developer
                 </Link>
@@ -86,7 +86,7 @@ export const Footer: React.SFC<{}> = () => {
                 <Link
                   component={LinkReactRouter}
                   color="inherit"
-                  to="/homepage"
+                  to="/software-architect-background"
                 >
                   As software architect
                 </Link>
