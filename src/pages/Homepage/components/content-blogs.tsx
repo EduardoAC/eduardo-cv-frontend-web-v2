@@ -73,11 +73,7 @@ export const ContentBlogs = (): React.ReactElement => {
                   business and technology blog
                 </Link>{' '}
                 and{' '}
-                <Link
-                  component={LinkReactRouter}
-                  color="inherit"
-                  to="/homepage"
-                >
+                <Link component={LinkReactRouter} color="inherit" to="/">
                   the brainstorming forum
                 </Link>
               </Typography>

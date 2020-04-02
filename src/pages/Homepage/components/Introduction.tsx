@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     hiddenXS: {
       display: 'none',
-      [theme.breakpoints.up('sm')]: {
+      [theme.breakpoints.up('md')]: {
         display: 'block',
       },
     },

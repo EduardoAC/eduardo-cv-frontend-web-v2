@@ -2,6 +2,41 @@ import { TimelineItem } from '../components/Timeline/Timeline';
 
 export const MyWorkTimeline: TimelineItem[] = [
   {
+    startDate: 'December, 2018',
+    endDate: 'March, 2020',
+    company: 'Moneyfarm',
+    position: 'Senior Frontend Developer',
+    description:
+      '<p>Rebuilding existing FE architecture to support company growth objectives.</p>',
+  },
+  {
+    startDate: 'November, 2016',
+    endDate: 'November, 2018',
+    company: 'Zalando SE',
+    position: 'Frontend Developer',
+    description:
+      '<p>As Front-end developer in Zalando, I am working on delivery the new platform for smart delivery using the latest stack of ReactJS and Redux.</p>',
+  },
+  {
+    startDate: 'March, 2016',
+    endDate: 'October, 2016',
+    company: 'Ocado Technology',
+    position: 'Frontend Developer',
+    description:
+      '<p>My role as a Front end developer allow me to work in a large set of really exciting technologies to extend my current stack moving from AngularJS to Backbone using Marionette.</p>' +
+      "<p>As part of my job I'm part of the team responsible to refactor the current project from Grunt, Backbone, Marionette, RequireJS and Bourbon to Browserify, NPM and Ocado CSS framework develop in the department.</p>",
+  },
+  {
+    startDate: 'October, 2014',
+    endDate: 'March, 2016',
+    company: 'Dream Maker Factory',
+    position: 'Founder. ',
+    description:
+      '<p>Dream Maker Factory is my own creation is a company that bring the opportunity of innovate and create new business Ideas.</p>' +
+      '<p>Projects as EventBuddy (Currently Emotour) in Oxford launch 2014 came as result of work and commitment.</p>' +
+      '<p>A second factor is a company who target to provide high potential talent to UK in order to find them dreamed job. </p>',
+  },
+  {
     startDate: 'August, 2014',
     endDate: 'October, 2015',
     company: 'Time Inc UK',

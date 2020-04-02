@@ -40,11 +40,7 @@ export const Footer: React.SFC<{}> = () => {
                 </Link>
               </ListItem>
               <ListItem disableGutters>
-                <Link
-                  component={LinkReactRouter}
-                  color="inherit"
-                  to="/homepage"
-                >
+                <Link component={LinkReactRouter} color="inherit" to="/">
                   The brainstorming forum
                 </Link>
               </ListItem>
